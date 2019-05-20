@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEAFC4F0-38CB-4A11-971B-BD34A89BC40D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tutor</RootNamespace>
+    <AssemblyName>Tutor</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConcurrencyInFunctionalProgramming.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\AppleUIFactory.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Application.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Entity\AppleButton.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Entity\AppleCheckBox.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Entity\IButton.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Entity\ICheckBox.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Entity\WindowsButton.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Entity\WindowsCheckBox.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\IGUICreatorFactory.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Client.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\UIGenerator.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\WindowsUIFactory.cs" />
+    <Compile Include="DesignPatterns\DecoratorDP\Sandwich.cs" />
+    <Compile Include="DesignPatterns\DecoratorDP\SandwichDecorator.cs" />
+    <Compile Include="DesignPatterns\DecoratorDP\SandwichMaker.cs" />
+    <Compile Include="DesignPatterns\DecoratorDP\SausageSandwich.cs" />
+    <Compile Include="DesignPatterns\DecoratorDP\TomatoSandwich.cs" />
+    <Compile Include="DesignPatterns\DecoratorDP\WhiteBreadAndCheeseSandwich.cs" />
+    <Compile Include="DesignPatterns\Creational\FactoryMethodDP\ICreateVehicle.cs" />
+    <Compile Include="DesignPatterns\Creational\FactoryMethodDP\Entity\Motorcycle.cs" />
+    <Compile Include="DesignPatterns\Creational\FactoryMethodDP\Entity\Truck.cs" />
+    <Compile Include="DesignPatterns\Creational\FactoryMethodDP\Entity\Car.cs" />
+    <Compile Include="DesignPatterns\Creational\FactoryMethodDP\Entity\IVehicle.cs" />
+    <Compile Include="DesignPatterns\Creational\FactoryMethodDP\VehicleFactory.cs" />
+    <Compile Include="DesignPatterns\Creational\FactoryMethodDP\VehicleType.cs" />
+    <Compile Include="DesignPatterns\ObserverDP\ILoanObserver.cs" />
+    <Compile Include="DesignPatterns\ObserverDP\BranchLoan.cs" />
+    <Compile Include="DesignPatterns\ObserverDP\InternetLoan.cs" />
+    <Compile Include="DesignPatterns\ObserverDP\IObserver.cs" />
+    <Compile Include="DesignPatterns\ObserverDP\LoanMaker.cs" />
+    <Compile Include="DesignPatterns\ObserverDP\LoanManager.cs" />
+    <Compile Include="DesignPatterns\Creational\FactoryMethodDP\VehicleMaker.cs" />
+    <Compile Include="Dummy.cs" />
+    <Compile Include="FunctionalProgramming.cs" />
+    <Compile Include="ImperativeDeclarativeAndFunctionalStyle.cs" />
+    <Compile Include="Linq.cs" />
+    <Compile Include="OOP\Inheritance\Client.cs" />
+    <Compile Include="OOP\Inheritance\IAreable.cs" />
+    <Compile Include="OOP\Inheritance\ISquareable.cs" />
+    <Compile Include="OOP\Inheritance\Shape.cs" />
+    <Compile Include="OOP\Inheritance\Square.cs" />
+    <Compile Include="OOP\Inheritance\SubSquare.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SOLID\LSP2\AccountService.cs" />
+    <Compile Include="SOLID\LSP2\Address.cs" />
+    <Compile Include="SOLID\LSP2\AddressService.cs" />
+    <Compile Include="SOLID\LSP2\Client.cs" />
+    <Compile Include="SOLID\LSP2\NewAddressService.cs" />
+    <Compile Include="SOLID\LSP2\Require.cs" />
+    <Compile Include="SOLID\LSP\Client.cs" />
+    <Compile Include="SOLID\LSP\IShape.cs" />
+    <Compile Include="SOLID\LSP\Rectangle.cs" />
+    <Compile Include="SOLID\LSP\Square.cs" />
+    <Compile Include="SOLID\OCP\AddressVerifier.cs" />
+    <Compile Include="SOLID\OCP\AddressVerifierGoodWay.cs" />
+    <Compile Include="SOLID\OCP\Client.cs" />
+    <Compile Include="SOLID\OCP\GermanyAddressVerifierGoodWay.cs" />
+    <Compile Include="SOLID\OCP\StateFinder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
