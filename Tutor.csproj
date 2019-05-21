@@ -101,6 +101,16 @@
     <Compile Include="SOLID\LSP\IShape.cs" />
     <Compile Include="SOLID\LSP\Rectangle.cs" />
     <Compile Include="SOLID\LSP\Square.cs" />
+    <Compile Include="SOLID\OCP2\AccountCreators\Accountant.cs" />
+    <Compile Include="SOLID\OCP2\Client.cs" />
+    <Compile Include="SOLID\OCP2\Applicants\Employee.cs" />
+    <Compile Include="SOLID\OCP2\AccountCreators\ExecutiveAccountant.cs" />
+    <Compile Include="SOLID\OCP2\Applicants\ExecutiveApplicant.cs" />
+    <Compile Include="SOLID\OCP2\AccountCreators\IAccountCreator.cs" />
+    <Compile Include="SOLID\OCP2\Applicants\IApplicant.cs" />
+    <Compile Include="SOLID\OCP2\AccountCreators\ManagerAccountant.cs" />
+    <Compile Include="SOLID\OCP2\Applicants\ManagerApplicant.cs" />
+    <Compile Include="SOLID\OCP2\Applicants\Person.cs" />
     <Compile Include="SOLID\OCP\AddressVerifier.cs" />
     <Compile Include="SOLID\OCP\AddressVerifierGoodWay.cs" />
     <Compile Include="SOLID\OCP\Client.cs" />
