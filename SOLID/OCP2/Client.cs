@@ -8,7 +8,7 @@ namespace Tutor.SOLID.OCP2
 {
     public class Client
     {
-        public static void Main(string[] args)
+        public static void Main3(string[] args)
         {
             var people = new List<IApplicant>
             {

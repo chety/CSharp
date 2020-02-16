@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConcurrencyInFunctionalProgramming.cs" />
+    <Compile Include="DependencyInjection\Version1\Business\ProductManager.cs" />
+    <Compile Include="DependencyInjection\Version1\Entity\EFDal.cs" />
+    <Compile Include="DependencyInjection\Version1\Entity\LogManager.cs" />
+    <Compile Include="DependencyInjection\Version2\Business\ProductManagerDI.cs" />
+    <Compile Include="DependencyInjection\Version2\Entity\Log\Ilogable.cs" />
+    <Compile Include="DependencyInjection\Version2\Entity\DAL\ISaveable.cs" />
+    <Compile Include="DependencyInjection\Version2\Entity\DAL\EfDal.cs" />
+    <Compile Include="DependencyInjection\Version2\Entity\Log\LogToDb.cs" />
+    <Compile Include="DependencyInjection\Version2\Entity\Log\LogToText.cs" />
+    <Compile Include="DependencyInjection\Version2\Entity\DAL\NHibernateDal.cs" />
+    <Compile Include="DependencyInjection\Version2\NinjectImplementation\InstanceFactory.cs" />
+    <Compile Include="DependencyInjection\Version2\NinjectImplementation\InstanceModule.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\AppleUIFactory.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Application.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactoryDP\Entity\AppleButton.cs" />
@@ -119,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -126,5 +142,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
